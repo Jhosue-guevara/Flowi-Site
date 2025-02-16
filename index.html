@@ -8,6 +8,15 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
+  <!-- ========== Bootstrap 5 CSS ========== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- ========== AOS CSS (Animate On Scroll) ========== -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- ========== Íconos de Bootstrap ========== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -36,6 +45,59 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Sección de Título */
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* Imagen de cada integrante */
+    .team .member img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    /*
+      Estilos para las flechas del carrusel:
+      - Quitamos el fondo oscuro por defecto
+      - Colocamos un círculo azul pequeño con el signo de + y -
+    */
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: auto !important;
+      background-color: transparent !important;
+      border: none !important;
+    }
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      background-color: transparent !important;
+    }
+    /* El span que contiene el signo */
+    .carousel-control-prev span,
+    .carousel-control-next span {
+      display: inline-block;
+      background-color: #0d6efd; /* Azul de Bootstrap */
+      color: #fff;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      text-align: center;
+      line-height: 28px;
+      font-size: 1rem;
+    }
+
+    /* Opcional: separaciones */
+    .member-info {
+      margin-bottom: 2rem; /* separa el texto del carrusel */
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -89,6 +151,7 @@
       </div>
     </section>
     <!-- /Hero Section -->
+    
     <!-- About Section -->
     <section id="about" class="about section">
       <div class="container">
@@ -295,6 +358,7 @@
       </div>
 
     </section><!-- /Características Section -->
+
     <!-- Why Us Section -->
     <section id="why-us" class="why-us section dark-background">
 
@@ -368,11 +432,6 @@
 
     </section><!-- /Why Us Section -->
 
-
-
-
-
-
     <!-- Sección de Portafolio -->
     <section id="portfolio" class="portfolio section py-5">
       <!-- Título de la sección -->
@@ -386,7 +445,6 @@
       </div>
       <!-- Fin del Título de la sección -->
       <div class="container">
-
 
         <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
@@ -441,169 +499,539 @@
     </section>
     <!-- /Sección de Portafolio -->
 
+    <!-- ========================
+       SECCIÓN DE EQUIPO
+       ======================== -->
+  <section id="team" class="team section py-5">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Equipo</h2>
+      <p>
+        Somos un equipo apasionado y multidisciplinario, comprometido con soluciones
+        innovadoras e impactantes. La colaboración y la excelencia nos guían en cada
+        proyecto para superar expectativas y generar resultados duraderos.
+      </p>
+    </div>
 
-
-
-    <!-- Team Section -->
-    <section id="team" class="team section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Equipo</h2>
-        <p>Somos un equipo apasionado y multidisciplinario, comprometido con soluciones innovadoras e impactantes.
-          La colaboración y la excelencia nos guían en cada proyecto para superar expectativas y generar resultados
-          duraderos.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="social">
-               
-                <a href="https://www.instagram.com/whereis.jefff?igsh=MWtlMHE1dmNpaWQ5eQ=="><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/jeffersonesperanza?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+    <div class="container">
+      <div class="row gy-5">
+        <!-- =======================
+             1. INTEGRANTE: JEFFERSON
+             ======================= -->
+        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+          <div class="member-img">
+            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="Jefferson">
+            <div class="social">
+              <a href="https://www.instagram.com/whereis.jefff?igsh=MWtlMHE1dmNpaWQ5eQ=="><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/jeffersonesperanza"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info text-center">
+            <h4>Jefferson Esperanza</h4>
+            <span>Back-End</span>
+            <p>Soy autodidacta, proactivo y altamente enfocado, capaz de aprender rápido gracias a mi memoria y lógica. Me sumerjo por completo en lo que me apasiona hasta lograr el mejor resultado.</p>
+            <!-- Botón CV -->
+            <a href="https://drive.google.com/file/d/1E3kemoqoLFRW6aGoDcgZiQrM_7Fv_8hT/view?usp=sharing" class="btn btn-primary mt-2" target="_blank">Ver CV</a>
+          </div>
+          <!-- Carrusel para JEFFERSON (10 imágenes) -->
+          <div id="carouselJefferson" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Slide 1 (3 imágenes) -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/aceptacion.png" class="d-block w-100" alt="Jefferson 1">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/poder.png" class="d-block w-100" alt="Jefferson 2">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/orden.png" class="d-block w-100" alt="Jefferson 3">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 (3 imágenes) -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/estatus.png" class="d-block w-100" alt="Jefferson 4">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/relaciones.png" class="d-block w-100" alt="Jefferson 5">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/maestria.png" class="d-block w-100" alt="Jefferson 6">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 3 (3 imágenes) -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/honra.png" class="d-block w-100" alt="Jefferson 7">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/curiosidad.png" class="d-block w-100" alt="Jefferson 8">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/libertad.png" class="d-block w-100" alt="Jefferson 9">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 4 (1 imagen) -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/meta.png" class="d-block w-100" alt="Jefferson 10">
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="member-info text-center">
-              <h4>Jefferson Esperanza</h4>
-              <span>Back-End</span>
-              <p>Soy autodidacta, proactivo y altamente enfocado, capaz de aprender rápido gracias a mi memoria y 
-                lógica. Me sumerjo por completo en lo que me apasiona hasta lograr el mejor resultado. 
-              </p>
-              <!-- Botón con enlace para ver CV -->
-              <a href="https://drive.google.com/file/d/1E3kemoqoLFRW6aGoDcgZiQrM_7Fv_8hT/view?usp=sharing" class="btn btn-primary mt-2" target="_blank">Ver CV</a>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-img">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              <div class="social">
-               
-                <a href="https://www.facebook.com/share/14sS6n9qU1/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/sofimaaar?igsh=MWw3OWN4bjY3YW9wdw%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/sof%C3%ADa-margarita-romero-rodr%C3%ADguez-6abb0029b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Sofía Romero</h4>
-              <span>Front-End</span>
-              <p>Soy auténtica y cautivadora. No sigo tendencias, las creo. Mi expontaneidad y extravagancia
-                me hacen única y mi creatividad redefine lo posible.</p>
-              <!-- Botón con enlace para ver CV --> </br>
-              <a href="https://drive.google.com/file/d/189W-hSFuSgsjld23mrSfLb5FHIo6zGYG/view?usp=sharing" class="btn btn-primary mt-2" target="_blank">Ver CV</a>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-img">
-              <img src="assets/img/team/Angel.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="https://x.com/i/flow/login?redirect_after_login=%2FJosue_Guevara19" target="_blank"><i
-                  class="bi bi-twitter-x"></i></a>
-              <a href="https://www.facebook.com/josue.portillo.5836711/" target="_blank"><i
-                  class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/josue_guevara_22/" target="_blank"><i
-                  class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/josu%C3%A9-guevara-41653327b/" target="_blank"><i
-                  class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Ángel Guevara</h4>
-              <span>Front-End</span>
-              <p> Proactivo y apasionado por la tecnología,Valoro las relaciones humanas.Mi objetivo es seguir creciendo
-                profesionalmente y contribuir al éxito empresarial.</p>
-              <!-- Botón con enlace para ver CV --></br>
-              <a href="https://drive.google.com/file/d/1Xf3QeBsNeFoVmRC9YEAq9Ed5jYOGAjo8/view?usp=sharing" target="_blank" class="btn btn-primary mt-2" download="Angel.pdf">Ver CV</a>
-
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
-            <div class="member-img">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/alex.vasquez.03?igsh=bXFjZGFmYmQ5YWEz"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>César Romero</h4>
-              <span>QA</span>
-              <p>Soy una persona entusiasta y alegre, siempre enfocada en ver el lado positivo de la vida. 
-                Me motiva ayudar y comprender a los demás, ya que creo que todos enfrentamos situaciones difíciles 
-                que, en ocasiones, pueden ser incomprendidas.</p>
-              <!-- Botón con enlace para ver CV -->
-              <a href="https://drive.google.com/file/d/19Bm3j-V2fE-kx9qdSswPw88LPFwY_eNc/view?usp=sharing" class="btn btn-primary mt-2" target="_blank">Ver CV</a>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
-            <div class="member-img">
-              <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <
-                <a href="https://www.facebook.com/gerson.argueta.1420"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/gerson.argueta.1420?igsh=eGEzN3l0aGhiOWU="><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Gerson Argueta</h4>
-              <span>Back-End</span>
-              <p>Soy Gerson Argueta, una combinación única de espontaneidad, ingenio y un toque de extravagancia. 
-                Me encanta aprender, explorar nuevas ideas y encontrar soluciones donde otros solo ven problemas. 
-                </p>
-              <!-- Botón con enlace para ver CV --></br>
-              <a href="https://drive.google.com/file/d/1tDtPxGgF4Yi2jrKKg0vARWaAJ4Opwawj/view?usp=sharing" class="btn btn-primary mt-2" target="_blank">Ver CV</a>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
-            <div class="member-img">
-              <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="">
-              <div class="social">
-               
-                <a href="https://www.facebook.com/neo.villalta"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/alexander_villalta._?igsh=MTN2ZG81bGpjdWR1eA=="><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/edwinalexandervillaltaortiz0108?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Edwin Villalta</h4>
-              <span>QA</span>
-              <p>Me considero una persona perseverante, que no se rinde fácilmente y que sigue adelante a pesar de 
-                las dificultades. Esta perseverancia, junto con mi resiliencia, son dos de mis mayores fortalezas. 
-                </p>
-              <!-- Botón con enlace para ver CV --></br>
-              <a href="https://www.instagram.com/alex.vasquez.03?igsh=bXFjZGFmYmQ5YWEz" class="btn btn-primary mt-2" target="_blank">Ver CV</a>
-            </div>
-          </div><!-- End Team Member -->
-
+            <!-- Controles (flechas) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselJefferson" data-bs-slide="prev">
+              <!-- Signo “-” dentro de un círculo azul -->
+              <span aria-hidden="true">-</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselJefferson" data-bs-slide="next">
+              <!-- Signo “+” dentro de un círculo azul -->
+              <span aria-hidden="true">+</span>
+            </button>
+          </div>
         </div>
+        <!-- FIN Integrante Jefferson -->
+
+
+        <!-- =======================
+             2. INTEGRANTE: SOFÍA
+             ======================= -->
+        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+          <div class="member-img">
+            <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="Sofía">
+            <div class="social">
+              <a href="https://www.facebook.com/share/14sS6n9qU1/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/sofimaaar?igsh=MWw3OWN4bjY3YW9wdw%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/sof%C3%ADa-margarita-romero-rodr%C3%ADguez-6abb0029b"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info text-center">
+            <h4>Sofía Romero</h4>
+            <span>Front-End</span>
+            <p>Soy auténtica y cautivadora. No sigo tendencias, las creo. Mi expontaneidad y extravagancia me hacen única y mi creatividad redefine lo posible.</p>
+            <!-- Botón CV --></br>
+            <a href="https://drive.google.com/file/d/189W-hSFuSgsjld23mrSfLb5FHIo6zGYG/view?usp=sharing" class="btn btn-primary mt-2" target="_blank">Ver CV</a>
+          </div>
+          <!-- Carrusel para SOFÍA -->
+          <div id="carouselSofia" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/aceptacion.png" class="d-block w-100" alt="Sofía 1">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/poder.png" class="d-block w-100" alt="Sofía 2">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/estatus.png" class="d-block w-100" alt="Sofía 3">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/maestria.png" class="d-block w-100" alt="Sofía 4">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/relaciones.png" class="d-block w-100" alt="Sofía 5">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/libertad.png" class="d-block w-100" alt="Sofía 6">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/curiosidad.png" class="d-block w-100" alt="Sofía 7">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/honra.png" class="d-block w-100" alt="Sofía 8">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/meta.png" class="d-block w-100" alt="Sofía 9">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/orden.png" class="d-block w-100" alt="Sofía 10">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Flechas -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSofia" data-bs-slide="prev">
+              <span aria-hidden="true">-</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSofia" data-bs-slide="next">
+              <span aria-hidden="true">+</span>
+            </button>
+          </div>
+        </div>
+        <!-- FIN Integrante Sofía -->
+
+        <!-- =======================
+             3. INTEGRANTE: ÁNGEL
+             ======================= -->
+        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+          <div class="member-img">
+            <img src="assets/img/team/Angel.jpg" class="img-fluid" alt="Ángel">
+            <div class="social">
+              <a href="https://x.com/i/flow/login?redirect_after_login=%2FJosue_Guevara19" target="_blank"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.facebook.com/josue.portillo.5836711/" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/josue_guevara_22/" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/josu%C3%A9-guevara-41653327b/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info text-center">
+            <h4>Ángel Guevara</h4>
+            <span>Front-End</span>
+            <p>Proactivo y apasionado por la tecnología, valoro las relaciones humanas. Mi objetivo es seguir creciendo profesionalmente y contribuir al éxito empresarial.</p>
+            <!-- Botón CV --></br>
+            <a href="https://drive.google.com/file/d/1Xf3QeBsNeFoVmRC9YEAq9Ed5jYOGAjo8/view?usp=sharing"
+               target="_blank" class="btn btn-primary mt-2" download="Angel.pdf">Ver CV</a>
+          </div>
+          <!-- Carrusel para ÁNGEL -->
+          <div id="carouselAngel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/aceptacion.png" class="d-block w-100" alt="Ángel 1">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/poder.png" class="d-block w-100" alt="Ángel 2">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/honra.png" class="d-block w-100" alt="Ángel 3">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/orden.png" class="d-block w-100" alt="Ángel 4">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/estatus.png" class="d-block w-100" alt="Ángel 5">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/maestria.png" class="d-block w-100" alt="Ángel 6">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/relaciones.png" class="d-block w-100" alt="Ángel 7">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/libertad.png" class="d-block w-100" alt="Ángel 8">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/curiosidad.png" class="d-block w-100" alt="Ángel 9">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/meta.png" class="d-block w-100" alt="Ángel 10">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Flechas -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAngel" data-bs-slide="prev">
+              <span aria-hidden="true">-</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAngel" data-bs-slide="next">
+              <span aria-hidden="true">+</span>
+            </button>
+          </div>
+        </div>
+        <!-- FIN Integrante Ángel -->
+
+
+        <!-- =======================
+             4. INTEGRANTE: CÉSAR
+             ======================= -->
+        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          <div class="member-img">
+            <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="César">
+            <div class="social">
+              
+              <a href="https://www.instagram.com/alex.vasquez.03?igsh=bXFjZGFmYmQ5YWEz"><i class="bi bi-instagram"></i></a>
+              
+            </div>
+          </div>
+          <div class="member-info text-center">
+            <h4>César Romero</h4>
+            <span>QA</span>
+            <p>Soy una persona entusiasta y alegre, siempre enfocada en ver el lado positivo de la vida. Me motiva ayudar y comprender a los demás, ya que todos enfrentamos situaciones difíciles que, en ocasiones, pueden ser incomprendidas.</p>
+            <!-- Botón CV -->
+            <a href="https://drive.google.com/file/d/19Bm3j-V2fE-kx9qdSswPw88LPFwY_eNc/view?usp=sharing" class="btn btn-primary mt-2" target="_blank">Ver CV</a>
+          </div>
+          <!-- Carrusel para CÉSAR -->
+          <div id="carouselCesar" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/estatus.png" class="d-block w-100" alt="César 1">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/poder.png" class="d-block w-100" alt="César 2">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/aceptacion.png" class="d-block w-100" alt="César 3">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/libertad.png" class="d-block w-100" alt="César 4">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/maestria.png" class="d-block w-100" alt="César 5">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/orden.png" class="d-block w-100" alt="César 6">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/meta.png" class="d-block w-100" alt="César 7">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/curiosidad.png" class="d-block w-100" alt="César 8">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/relaciones.png" class="d-block w-100" alt="César 9">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/honra.png" class="d-block w-100" alt="César 10">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Flechas -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCesar" data-bs-slide="prev">
+              <span aria-hidden="true">-</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCesar" data-bs-slide="next">
+              <span aria-hidden="true">+</span>
+            </button>
+          </div>
+        </div>
+        <!-- FIN Integrante César -->
+
+
+        <!-- =======================
+             5. INTEGRANTE: GERSON
+             ======================= -->
+        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
+          <div class="member-img">
+            <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="Gerson">
+            <div class="social">
+           
+              <a href="https://www.instagram.com/gerson.argueta.1420?igsh=eGEzN3l0aGhiOWU="><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/gerson-argueta-a94b95206/"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info text-center">
+            <h4>Gerson Argueta</h4>
+            <span>Back-End</span>
+            <p>Soy Gerson Argueta, una combinación única de espontaneidad, ingenio y un toque de extravagancia. Me encanta aprender, explorar nuevas ideas y encontrar soluciones donde otros solo ven problemas.</p>
+            <!-- Botón CV --></br>
+            <a href="https://drive.google.com/file/d/1tDtPxGgF4Yi2jrKKg0vARWaAJ4Opwawj/view?usp=sharing" class="btn btn-primary mt-2" target="_blank">Ver CV</a>
+          </div>
+          <!-- Carrusel para GERSON -->
+          <div id="carouselGerson" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/aceptacion.png" class="d-block w-100" alt="Gerson 1">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/curiosidad.png" class="d-block w-100" alt="Gerson 2">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/libertad.png" class="d-block w-100" alt="Gerson 3">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/relaciones.png" class="d-block w-100" alt="Gerson 4">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/poder.png" class="d-block w-100" alt="Gerson 5">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/meta.png" class="d-block w-100" alt="Gerson 6">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/estatus.png" class="d-block w-100" alt="Gerson 7">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/honra.png" class="d-block w-100" alt="Gerson 8">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/maestria.png" class="d-block w-100" alt="Gerson 9">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/orden.png" class="d-block w-100" alt="Gerson 10">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Flechas -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGerson" data-bs-slide="prev">
+              <span aria-hidden="true">-</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselGerson" data-bs-slide="next">
+              <span aria-hidden="true">+</span>
+            </button>
+          </div>
+        </div>
+        <!-- FIN Integrante Gerson -->
+
+
+        <!-- =======================
+             6. INTEGRANTE: EDWIN
+             ======================= -->
+        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+          <div class="member-img">
+            <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="Edwin">
+            <div class="social">
+              
+              <a href="https://www.instagram.com/alexander_villalta._?igsh=MTN2ZG81bGpjdWR1eA=="><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/edwinalexandervillaltaortiz0108?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info text-center">
+            <h4>Edwin Villalta</h4>
+            <span>QA</span>
+            <p>Me considero una persona perseverante, que no se rinde fácilmente y que sigue adelante a pesar de las dificultades. Esta perseverancia, junto con mi resiliencia, son dos de mis mayores fortalezas.</p>
+            <!-- Botón CV --></br>
+            <a href="https://www.instagram.com/alex.vasquez.03?igsh=bXFjZGFmYmQ5YWEz" class="btn btn-primary mt-2" target="_blank">Ver CV</a>
+          </div>
+          <!-- Carrusel para EDWIN -->
+          <div id="carouselEdwin" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/orden.png" class="d-block w-100" alt="Edwin 1">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/maestria.png" class="d-block w-100" alt="Edwin 2">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/curiosidad.png" class="d-block w-100" alt="Edwin 3">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/libertad.png" class="d-block w-100" alt="Edwin 4">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/relaciones.png" class="d-block w-100" alt="Edwin 5">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/aceptacion.png" class="d-block w-100" alt="Edwin 6">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/poder.png" class="d-block w-100" alt="Edwin 7">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/honra.png" class="d-block w-100" alt="Edwin 8">
+                  </div>
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/estatus.png" class="d-block w-100" alt="Edwin 9">
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-4">
+                    <img src="assets/img/portfolio/meta.png" class="d-block w-100" alt="Edwin 10">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Flechas -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEdwin" data-bs-slide="prev">
+              <span aria-hidden="true">-</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEdwin" data-bs-slide="next">
+              <span aria-hidden="true">+</span>
+            </button>
+          </div>
+        </div>
+        <!-- FIN Integrante Edwin -->
 
       </div>
-
-    </section><!-- /Team Section -->
-
-
-
-
+    </div>
+  </section>
 
   </main>
 
   <footer id="footer" class="footer dark-background">
-
-
-
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Flowi</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
@@ -614,7 +1042,6 @@
         Designed by <a href="https://bootstrapmade.com/">Flowi</a>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
@@ -636,6 +1063,15 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- ========== Bootstrap 5 JS ========== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ========== AOS JS ========== -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
